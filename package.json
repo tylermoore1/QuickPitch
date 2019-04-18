@@ -1,0 +1,24 @@
+{
+  "name": "quickpitch",
+  "version": "1.0.0",
+  "description": "Web application to help people find their dream job quicker and more efficiently",
+  "main": "server.js",
+  "scripts": {
+    "test": "bash test.sh",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylermoore1/QuickPitch.git"
+  },
+  "keywords": [
+    "job",
+    "search"
+  ],
+  "author": "Tyler Moore, Josh Ramos, Ariel Riggan, Charlie Davies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylermoore1/QuickPitch/issues"
+  },
+  "homepage": "https://github.com/tylermoore1/QuickPitch#readme"
+}
