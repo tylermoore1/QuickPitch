@@ -1,16 +1,18 @@
 $(document).ready(function () {
+  var companyNames = ['Thumbtack', 'BrainVire Infotech', 'Atomic Object', 'Adobe', 'Mailchimp',
+                      'Shopify', 'Dropbox', 'SalesForce']
   //append the company cards to user page so they can click on them to see if they want to connect
   for (var i = 0; i < 8; i += 2) {
     var j = i + 1;
     $('#idMainContainer').append('<div class="parent-container"> \
           <div class="container-fluid companyCards col-md-5 offset-md-1"> \
-            <div id="accordion"> \
-              <div class="card"> \
-                <div class="card-header" id="headingCard' + i + '"> \
-                  <button style="width:100%" class="btn" data-toggle="collapse" data-target="#collapseCard' + i + '" aria-expanded="true" aria-controls="collapseCard' + i + '"> \
+            <div id="accordion companyButtons"> \
+              <div class="card companyButtons"> \
+                <div class="card-header companyButtons" id="headingCard' + i + '"> \
+                  <button style="width:100%" class="btn companyButtons" data-toggle="collapse" data-target="#collapseCard' + i + '" aria-expanded="true" aria-controls="collapseCard' + i + '"> \
                     <div class="row align-items-center"> \
                       <div class="col-md-5 offset-md-1"> \
-                        <label> Thumbtack </label> \
+                        <label> '+ companyNames[i] +' </label> \
                       </div> \
                       <div class="col-md-2 offset-md-1"> \
                         <img style="width:0.8in;height:0.8in" src="img/imgLogo' + i + '.png">\
@@ -23,7 +25,7 @@ $(document).ready(function () {
                   <div class="card-body"> \
                     <div class="row"> \
                       <div class="col-md-12"> \
-                        Thumbtack is an online service that matches customers with local professionals. \
+                        '+ companyNames[i] + ' is an online service that matches customers with local professionals. \
                       </div> \
                     </div> \
                     <br /> \
@@ -38,13 +40,13 @@ $(document).ready(function () {
           </div> \
           \
           <div class="container-fluid companyCards col-md-5"> \
-            <div id="accordion"> \
-              <div class="card"> \
-                <div class="card-header" id="headingCard' + j + '"> \
-                  <button style="width:100%" class="btn" data-toggle="collapse" data-target="#collapseCard' + j + '" aria-expanded="true" aria-controls="collapseCard' + j + '"> \
+            <div id="accordion companyButtons"> \
+              <div class="card companyButtons"> \
+                <div class="card-header companyButtons" id="headingCard' + i + '"> \
+                  <button style="width:100%" class="btn companyButtons" data-toggle="collapse" data-target="#collapseCard' + j + '" aria-expanded="true" aria-controls="collapseCard' + j + '"> \
                     <div class="row align-items-center"> \
                       <div class="col-md-5 offset-md-1"> \
-                        <label> Thumbtack </label> \
+                        <label> '+ companyNames[j] +' </label> \
                       </div> \
                       <div class="col-md-2 offset-md-1"> \
                         <img style="width:0.8in;height:0.8in" src="img/imgLogo' + j + '.png">\
@@ -57,7 +59,7 @@ $(document).ready(function () {
                   <div class="card-body"> \
                     <div class="row"> \
                       <div class="col-md-12"> \
-                        Thumbtack is an online service that matches customers with local professionals. \
+                        '+ companyNames[j] + ' is an online service that matches customers with local professionals. \
                       </div> \
                     </div> \
                     <br /> \
