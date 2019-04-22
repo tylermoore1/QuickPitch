@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css">
+    <style>
+
+      #idHeadContainer {
+        background-color:#3C4858;
+      }
+
+      .buttonLinks {
+        color:white;
+        background-color:#3C4858;
+      }
+
+      .parent-container {
+        display:flex;
+      }
+
+      .mainPageContainer {
+        border-style:solid;
+        height:5in;
+      }
+
+      .list-group-item {
+        font-size:10;
+        border-style:none;
+      }
+
+      .fa-check {
+        float:right;
+      }
+
+      .companyCards {
+        border-style:solid;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container-fluid" id="idHeadContainer">
+      <div class="row align-items-center" style="height:10%;border-bottom:3px solid black">
+        <div class="col-md-2">
+          <img src="img/logo.png" alt="Company img/logo" style="width:0.55in;height:0.5in">
+        </div>
+        <div class="col-md-1">
+          <button style="border-color:white" class="buttonLinks btn" type="button" value="Home"> Home </button>
+        </div>
+        <div class="col-md-1">
+          <button class="buttonLinks btn" type="button" value="About"> About </button>
+        </div>
+        <div class="col-md-1">
+          <button class="buttonLinks btn" type="button" value="Profile"> Profile </button>
+        </div>
+        <div class="col-md-1">
+          <button class="buttonLinks btn" type="button" value="Contact Us"> Contact Us </button>
+        </div>
+        <div class="col-md-3 offset-md-1">
+          <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="searchBar">
+        </div>
+        <div class="col-md-1 offset-md-1">
+          <i style="color:white" class="fas fa-cog fa-2x"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="parent-container">
+      <div class="container-fluid col-md-2 mainPageContainer" id="idFilterContainer">
+        <div class="row">
+          <div class="col-md-12">
+            <br />
+            <h5> Refine By </h5>
+            <hr style="border-bottom: 1px solid black" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseLocation"
+              aria-expanded="false" aria-controls="collapseLocation">Location &nbsp &nbsp &nbsp <i class="fa fa-angle-down"></i> </button>
+          </div>
+
+          <div class="collapse multi-collapse" id="collapseLocation">
+            <div class="card card-body">
+              <ul class="list-group">
+                <li class="list-group-item">Boulder <i class="fas fa-check"></i> </li>
+                <li class="list-group-item">Denver <i class="fas fa-check"></i> </li>
+                <li class="list-group-item">Colorado Springs &nbsp <i class="fas fa-check"></i> </li>
+              </ul>
+              <button style="border-color:#3C4858" type="button" class="btn btn-sm" value="Add More"> Add More </button>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseEmployment"
+              aria-expanded="false" aria-controls="collapseEmployment">Employment &nbsp &nbsp &nbsp <i class="fa fa-angle-down"></i> </button>
+          </div>
+
+          <div class="collapse multi-collapse" id="collapseEmployment">
+            <div class="card card-body">
+              <ul class="list-group">
+                <li class="list-group-item">Big Company &nbsp <i class="fas fa-check"></i> </li>
+                <li class="list-group-item">Small Company &nbsp <i class="fas fa-check"></i> </li>
+                <li class="list-group-item">Start Up &nbsp <i class="fas fa-check"></i> </li>
+              </ul>
+              <button style="border-color:#3C4858" type="button" class="btn btn-sm" value="Add More"> Add More </button>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseSkills"
+              aria-expanded="false" aria-controls="collapseSkills">Skills &nbsp &nbsp &nbsp <i class="fa fa-angle-down"></i> </button>
+          </div>
+
+          <div class="collapse multi-collapse" id="collapseSkills">
+            <div class="card card-body">
+              <ul class="list-group">
+                <li class="list-group-item">C# &nbsp <i class="fas fa-check"></i> </li>
+                <li class="list-group-item">.NET Framework &nbsp <i class="fas fa-check"></i> </li>
+                <li class="list-group-item">Networking &nbsp <i class="fas fa-check"></i> </li>
+              </ul>
+              <button style="border-color:#3C4858" type="button" class="btn btn-sm" value="Add More"> Add More </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid col-md-8 mainPageContainer" id="idMainContainer">
+
+      </div>
+
+      <div class="container-fluid col-md-2 mainPageContainer" id="idMessageContainer">
+        <div class="row">
+          <div class="col-md-12">
+            <br />
+            <h5 style="text-align:right"> Messages </h5>
+            <hr style="border-bottom: 1px solid black" />
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="img/workday.png" style="width:0.7in;height:0.4in">
+          </div>
+          <div class="col-md-4" style="text-align:center">
+            <div style="border-radius:50%;background-color:green;width:75%">
+              <label style="color:white"> 1 </label>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="img/airbnb.png" style="width:0.7in;height:0.4in">
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="img/morgan-stanley.png" style="width:0.7in;height:0.4in">
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="img/twitter.png" style="width:0.5in;height:0.5in">
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <label style="font-size:12"> Message Center &nbsp <i class="fa fa-angle-right"></i> </label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+  <script src="mainPageLogic.js"></script>
+
+</html>
