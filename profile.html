@@ -14,6 +14,28 @@
         color:white;
         background-color:#3C4858;
       }
+	  .profile{
+		  height: 43%;
+		  width: 90%;
+		  transform: translate(0,10%);
+		  background-color: #d3d3d3;
+		  border-radius: 25px;
+		  margin: 5%;
+		  border: solid 2px;
+	  }
+	  .img-circle
+	  {
+		  transform: translate(0,-20%);
+		  border-radius: 100%;
+		  border: solid 2px;
+	  }
+	  h2,h3,h4,h5{
+	   color: #3C4858;
+	  }
+	  .account_info input[type="image"] {
+	    width:40%;
+		height:30%;
+	  }
 
 
     </style>
@@ -26,13 +48,13 @@
           <img src="img/logo.png" alt="Company img/logo" style="width:0.55in;height:0.5in">
         </div>
         <div class="col-md-1">
-          <button style="border-color:white" class="buttonLinks btn" type="button" value="Home"> Home </button>
+          <button class="buttonLinks btn" type="button" value="Home"> Home </button>
         </div>
         <div class="col-md-1">
           <button class="buttonLinks btn" type="button" value="About"> About </button>
         </div>
         <div class="col-md-1">
-          <button class="buttonLinks btn" type="button" value="Profile"> Profile </button>
+          <button style="border-color:white" class="buttonLinks btn" type="button" value="Profile"> Profile </button>
         </div>
         <div class="col-md-1">
           <button class="buttonLinks btn" type="button" value="Contact Us"> Contact Us </button>
@@ -45,6 +67,24 @@
         </div>
       </div>
     </div>
+	<div class="profile">
+			<center>
+	    	<img src="img/profilePic.png" name="aboutme" width="140" height="140" 			class="img-circle"></a>
+	        <h3>John Smith</h3>
+	        <p>Email: John.Smith@gmail.com | DOB: 07/25/1993</p>
+			<h5>Denver, CO</h5>
+			<button class="btn btn-outline-dark" type="submit">Edit</button>
+			<center>
+	</div>
+	<div class="account_info">
+		<center>
+		<h2>Account Information</h2>
+		<input type="image" src="img/edu.jpeg"/>
+		<input type="image" src="img/skill.jpg" />
+		<input type="image" src="img/employee.jpg" />
+		<input type="image" src="img/personality.jpg" />
+		<center>
+	</div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
