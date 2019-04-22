@@ -1,29 +1,77 @@
 $(document).ready(function () {
   //append the company cards to user page so they can click on them to see if they want to connect
-  $('#idMainContainer').append('<div class="parent-container"> \
-        <div class="container-fluid companyCards col-md-5 offset-md-1"> \
-          <div id="accordion"> \
-            <div class="card"> \
-              <div class="card-header" id="headingCard1"> \
-                <button style="width:100%" class="btn" data-toggle="collapse" data-target="#collapseCard1" aria-expanded="true" aria-controls="collapseCard1"> \
-                  <div class="row align-items-center"> \
-                    <div class="col-md-12"> \
-                      <label> Thumbtack </label> \
-                      <img style="width:0.5in;height:0.5in" src="img/thumbtack.png">\
+  for (var i = 0; i < 8; i += 2) {
+    var j = i + 1;
+    $('#idMainContainer').append('<div class="parent-container"> \
+          <div class="container-fluid companyCards col-md-5 offset-md-1"> \
+            <div id="accordion"> \
+              <div class="card"> \
+                <div class="card-header" id="headingCard' + i + '"> \
+                  <button style="width:100%" class="btn" data-toggle="collapse" data-target="#collapseCard' + i + '" aria-expanded="true" aria-controls="collapseCard' + i + '"> \
+                    <div class="row align-items-center"> \
+                      <div class="col-md-5 offset-md-1"> \
+                        <label> Thumbtack </label> \
+                      </div> \
+                      <div class="col-md-2 offset-md-1"> \
+                        <img style="width:0.8in;height:0.8in" src="img/imgLogo' + i + '.png">\
+                      </div> \
+                    </div>\
+                  </button> \
+                </div> \
+                \
+                <div id="collapseCard' + i + '" class="collapse" aria-labelledby="headingCard' + i + '" data-parent="#accordion"> \
+                  <div class="card-body"> \
+                    <div class="row"> \
+                      <div class="col-md-12"> \
+                        Thumbtack is an online service that matches customers with local professionals. \
+                      </div> \
                     </div> \
-                  </div>\
-                </button> \
-              </div> \
-              \
-              <div id="collapseCard1" class="collapse" aria-labelledby="headingCard1" data-parent="#accordion"> \
-                <div class="card-body"> \
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft \ beer farm-to-table, raw denim aesthetic synth nesciunt you probably havent heard of them accusamus labore sustainable VHS. \
+                    <br /> \
+                    <div class="row"> \
+                      <div class="col-md-1"> <i style="color:red" class="fas fa-times fa-2x"></i> </div> \
+                      <div class="col-md-1 offset-md-9"> <i style="color:green" class="fas fa-check fa-2x"></i> </div> \
+                    </div> \
+                  </div> \
                 </div> \
               </div> \
             </div> \
           </div> \
-        </div> \
-        <div class="container-fluid companyCards col-md-5"> \
-        </div> \
-      </div>')
-})
+          \
+          <div class="container-fluid companyCards col-md-5"> \
+            <div id="accordion"> \
+              <div class="card"> \
+                <div class="card-header" id="headingCard' + j + '"> \
+                  <button style="width:100%" class="btn" data-toggle="collapse" data-target="#collapseCard' + j + '" aria-expanded="true" aria-controls="collapseCard' + j + '"> \
+                    <div class="row align-items-center"> \
+                      <div class="col-md-5 offset-md-1"> \
+                        <label> Thumbtack </label> \
+                      </div> \
+                      <div class="col-md-2 offset-md-1"> \
+                        <img style="width:0.8in;height:0.8in" src="img/imgLogo' + j + '.png">\
+                      </div> \
+                    </div>\
+                  </button> \
+                </div> \
+                \
+                <div id="collapseCard' + j + '" class="collapse" aria-labelledby="headingCard' + j + '" data-parent="#accordion"> \
+                  <div class="card-body"> \
+                    <div class="row"> \
+                      <div class="col-md-12"> \
+                        Thumbtack is an online service that matches customers with local professionals. \
+                      </div> \
+                    </div> \
+                    <br /> \
+                    <div class="row"> \
+                      <div class="col-md-1"> <i style="color:red" class="fas fa-times fa-2x"></i> </div> \
+                      <div class="col-md-1 offset-md-9"> <i style="color:green" class="fas fa-check fa-2x"></i> </div> \
+                    </div> \
+                  </div> \
+                </div> \
+              </div> \
+            </div> \
+          </div> \
+          \
+        </div>')
+  }
+
+});
